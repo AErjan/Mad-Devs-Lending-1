@@ -1,5 +1,6 @@
 .vscode/
+build/
 settings.json
-nodu_modules
+node_modules
 npm-debug.log
 .DS_Store
