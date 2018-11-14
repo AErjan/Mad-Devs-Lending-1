@@ -37,7 +37,7 @@ gulp.task('templates:compile', function buildHTML() {
 // Style
 gulp.task('style:compile', function() {
   return gulp
-    .src('src/styles/main.sass')
+    .src('src/styles/main.scss')
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({ browsers: ['last 5 versions'] }))
@@ -84,7 +84,7 @@ gulp.task('copy', gulp.parallel('copy:fonts', 'copy:images'));
 // Watchers
 gulp.task('watch', function() {
   gulp.watch('src/templates/**/*.pug', gulp.series('templates:compile'));
-  gulp.watch('src/styles/**/*.sass', gulp.series('style:compile'));
+  gulp.watch('src/styles/**/*.scss', gulp.series('style:compile'));
 });
 
 // Default
