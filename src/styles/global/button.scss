@@ -1,0 +1,27 @@
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 15px 20px;
+  border: 3px solid #ffffff;
+  border-radius: 5px;
+  background-color: transparent;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 0.875;
+  font-family: quattrocento-qans;
+  margin-right: 10px;
+  transition: 0.3s;
+  position: relative;
+
+  &__active,
+  &:hover {
+    border-color: $accent-color;
+    background-color: $accent-color;
+  }
+
+  &_center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

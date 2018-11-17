@@ -1,0 +1,27 @@
+.slider {
+  background-color: $section-color;
+  background-image: url(../images/top-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__content {
+    width: 60%;
+    padding: 225px 0 250px 0;
+  }
+
+  &__title {
+    margin: 0 0 20px 0;
+    font-size: 2.25rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: $ff-text-bold;
+  }
+
+  &__description {
+    color: #ccd0d7;
+    margin: 0 0 50px 0;
+    font-family: serif;
+    line-height: 1.4rem;
+  }
+}

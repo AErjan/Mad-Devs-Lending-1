@@ -1,0 +1,32 @@
+section.touch
+  .container
+    h2.title Stay in touch
+
+  img.touch__map(src='images/map.jpg' alt='Picture map')
+
+  .container
+    .touch__contact
+      .touch__header Contact information
+      p.touch__description.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Ducimus odio nesciunt soluta at eos repellat fugiat
+        ipsa quos aliquid perspiciatis!
+
+      p.touch__description.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Ducimus odio nesciunt soluta at eos repellat fugiat
+
+    form.touch__form(method='post' action='#')
+      .touch__fields
+        .touch__field
+          label.touch__label(for="name") Your name
+          input.touch__input(type='text' id='name')
+        .touch__field
+          label.touch__label(for="email") Your email
+          input.touch__input(type='email' id='email')
+
+      label.touch__label(for="message") Your message
+      textarea.touch__textarea(id='message')
+
+      button(type='submit').btn.btn__active Send message 

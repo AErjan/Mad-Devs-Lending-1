@@ -1,6 +1,19 @@
 @import '../../node_modules/font-awesome/scss/font-awesome';
 @import '../../node_modules/normalize.scss/normalize';
 
-@import 'global/vars.scss';
-@import 'global/base.scss';
-@import 'global/fonts.scss';
+@import 'global/fonts';
+@import 'global/vars';
+@import 'global/sprite';
+@import 'global/base';
+@import 'global/nav';
+@import 'global/button';
+
+@import 'sections/header';
+@import 'sections/slider';
+@import 'sections/modest';
+@import 'sections/team';
+@import 'sections/work';
+@import 'sections/wedo';
+@import 'sections/features';
+@import 'sections/touch';
+@import 'sections/footer';

@@ -54,7 +54,7 @@ gulp.task('sprite', function(cb) {
     spritesmith({
       imgName: 'sprite.png',
       imgPath: '../images/sprite.png',
-      cssName: 'sprite.sass',
+      cssName: 'sprite.scss',
     }),
   );
 

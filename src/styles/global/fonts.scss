@@ -1,31 +1,29 @@
 @font-face {
-  font-family: 'georgia-bold';
-  src: url('../fonts/georgia-bold.woff') format('woff'),
-    url('../fonts/georgia-bold.woff2') format('woff2');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'helvatica-neue-bold';
-  src: url('../fonts/helvetica-neue-bold.woff') format('woff'),
-    url('../fonts/helvetica-neue-bold.woff2') format('woff2');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'helvetica-neue-light';
-  src: url('../fonts/helvetica-neue-light.woff') format('woff'),
-    url('../fonts/helvetica-neue-light.woff2') format('woff2');
+  font-family: 'open-sans';
+  src: url('../../fonts/Open-Sans/OpenSans-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'helvetica-neue-regular';
-  src: url('../fonts/helvetica-neue-light.woff') format('woff'),
-    url('../fonts/helvetica-neue-light.woff2') format('woff2');
+  font-family: 'open-sans-bold';
+  src: url('../../fonts/Open-Sans/OpenSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'quattrocento-qans';
+  src: url('../../fonts/Quattrocento-Sans/QuattrocentoSans-Regular.ttf')
+    format('truetype');
   font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'quattrocento-qans-bold';
+  src: url('../../fonts/Quattrocento-Sans/QuattrocentoSans-Bold.ttf')
+    format('truetype');
+  font-weight: bold;
   font-style: normal;
 }

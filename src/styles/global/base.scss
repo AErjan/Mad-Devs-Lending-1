@@ -2,7 +2,6 @@ body {
   font-family: $ff-main;
   font-size: 1rem;
   line-height: 1.2;
-  background: #666642;
 }
 
 html {
@@ -10,17 +9,92 @@ html {
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
 ul,
 ol {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 
 .container {
-  max-width: 1024px;
+  max-width: 1140px;
   margin: auto;
+}
+
+.title {
+  color: #292f36;
+  font-family: $ff-main-bold;
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  padding-left: 24px;
+  position: relative;
+  margin: 0 0 58px 0;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 40px;
+    background-color: #e1e6ea;
+    position: absolute;
+    left: 0;
+  }
+
+  &--wedo {
+    margin-bottom: 85px;
+  }
+}
+
+.social {
+  &__list {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  &__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 60px;
+    height: 60px;
+  }
+
+  &__link {
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    line-height: 60px;
+    background-color: #c8cdd0;
+    font-size: 1.3rem;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: lighten(#c8cdd0, 3%);
+    }
+  }
+}
+
+.icon {
+  margin: auto auto 35px auto;
+}
+
+.icon--setup {
+  @include sprite($setup);
+}
+
+.icon--display {
+  @include sprite($display);
+}
+
+.icon--design {
+  @include sprite($design);
+}
+
+.icon--time {
+  @include sprite($time);
 }

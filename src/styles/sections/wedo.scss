@@ -1,0 +1,29 @@
+.wedo {
+  padding: 80px 0 80px 0;
+
+  &__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 260px;
+    text-align: center;
+    margin-right: 29px;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+
+  &__header {
+    text-transform: uppercase;
+    color: #292f36;
+    font-family: $ff-text-bold;
+    font-size: 1.0625rem;
+    margin: 0 0 26px 0;
+  }
+
+  &__description {
+    color: #8d8f92;
+    margin: 0 0 86px 0;
+    line-height: 1.5rem;
+  }
+}

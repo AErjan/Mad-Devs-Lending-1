@@ -1,0 +1,35 @@
+.footer {
+  padding: 40px 0 40px 0;
+  background-color: $section-color;
+  color: #ffffff;
+  font-size: 0.875rem;
+
+  &__copyright {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+  }
+
+  .social {
+    display: inline-block;
+    vertical-align: middle;
+    width: 49.6%;
+    text-align: right;
+
+    &__item {
+      width: 20px;
+      height: 20px;
+      margin-right: 15px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &__link {
+      background-color: transparent;
+      text-align: center;
+      line-height: 20px;
+    }
+  }
+}

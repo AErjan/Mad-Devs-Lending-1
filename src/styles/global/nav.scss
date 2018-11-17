@@ -1,0 +1,43 @@
+.nav {
+  width: 85%;
+  margin-left: 66px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: right;
+
+  &__list {
+    text-align: right;
+  }
+
+  &__item {
+    display: inline-block;
+    margin-right: 25px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 6px 12px;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    font-family: $ff-main-bold;
+    text-decoration: none;
+    color: #a4aead;
+    border: 3px solid transparent;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+
+    &:hover {
+      border-color: #a4aead;
+    }
+
+    &--active {
+      color: $accent-color;
+      border-color: $accent-color;
+    }
+  }
+}
