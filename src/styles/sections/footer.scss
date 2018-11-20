@@ -1,13 +1,24 @@
 .footer {
-  padding: 40px 0 40px 0;
+  padding: 37px 0 40px 0;
   background-color: $section-color;
   color: #ffffff;
   font-size: 0.875rem;
+
+  @media (max-width: 1180px) {
+    padding: 30px 20px 32px 20px;
+  }
 
   &__copyright {
     display: inline-block;
     vertical-align: middle;
     width: 50%;
+
+    @media (max-width: 969px) {
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
   }
 
   .social {
@@ -15,6 +26,12 @@
     vertical-align: middle;
     width: 49.6%;
     text-align: right;
+
+    @media (max-width: 969px) {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
 
     &__item {
       width: 20px;
@@ -30,6 +47,11 @@
       background-color: transparent;
       text-align: center;
       line-height: 20px;
+      transition: 0.3s;
+
+      &:hover {
+        color: $accent-color;
+      }
     }
   }
 }

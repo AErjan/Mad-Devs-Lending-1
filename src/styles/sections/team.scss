@@ -1,14 +1,40 @@
 .team {
-  padding: 80px 0 100px;
+  padding: 76px 0 96px;
+
+  @media (max-width: 1180px) {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+  }
+
+  @media (max-width: 600px) {
+    padding: 50px 0 40px;
+  }
 
   &__item {
     display: inline-block;
     vertical-align: top;
     width: 263px;
     margin-right: 25px;
+    margin-bottom: 20px;
+    text-align: left;
 
-    &:nth-child(4n) {
+    &:last-child {
       margin-right: 0;
+    }
+
+    @media (max-width: 930px) {
+      &:last-child {
+        margin-right: 25px;
+      }
+    }
+
+    @media (max-width: 615px) {
+      margin: 0 25px 20px 25px;
+    }
+
+    @media (max-width: 450px) {
+      width: 240px;
     }
 
     &__info {
@@ -38,6 +64,12 @@
   &__image {
     position: relative;
     font-size: 0;
+    width: 100%;
+
+    @media (max-width: 615px) {
+      margin: 0 auto;
+      display: block;
+    }
 
     .social {
       opacity: 0;
@@ -72,6 +104,13 @@
           background-color: lighten($section-color, 10%);
         }
       }
+    }
+  }
+
+  &__picture {
+    @media (max-width: 450px) {
+      width: 100%;
+      height: 100%;
     }
   }
 

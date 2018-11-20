@@ -1,7 +1,8 @@
 .header {
   color: #a4aead;
   background-color: #1d2126;
-  padding: 40px 0;
+  padding: 25px 0;
+  position: relative;
 }
 
 .logo {
@@ -14,5 +15,10 @@
   &__picture {
     width: 100%;
     height: 100%;
+  }
+
+  @media (max-width: 1180px) {
+    margin-left: 20px;
+    margin-right: 400px;
   }
 }

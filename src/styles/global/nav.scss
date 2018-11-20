@@ -1,33 +1,32 @@
 .nav {
-  width: 85%;
-  margin-left: 66px;
+  width: 90.8%;
   display: inline-block;
   vertical-align: middle;
   text-align: right;
 
-  &__list {
-    text-align: right;
+  @media (max-width: 1185px) {
+    display: none;
   }
 
   &__item {
     display: inline-block;
-    margin-right: 25px;
+    margin-left: 10px;
 
-    &:last-child {
-      margin-right: 0;
+    &:first-child {
+      margin-left: 0;
     }
   }
 
   &__link {
     display: inline-block;
     vertical-align: middle;
-    padding: 6px 12px;
+    padding: 6px 8px;
     font-size: 0.875rem;
     text-transform: uppercase;
     font-family: $ff-main-bold;
     text-decoration: none;
     color: #a4aead;
-    border: 3px solid transparent;
+    border: 2px solid transparent;
     border-radius: 4px;
     transition: border-color 0.3s;
 

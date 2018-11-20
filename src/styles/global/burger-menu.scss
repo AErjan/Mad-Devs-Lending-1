@@ -1,0 +1,48 @@
+.burger-menu {
+  display: none;
+  position: relative;
+  top: -45px;
+
+  @media (max-width: 1185px) {
+    display: block;
+  }
+
+  &__icon {
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    position: absolute;
+    top: 22px;
+    right: 45px;
+  }
+
+  &__list {
+    position: absolute;
+    width: 300px;
+    top: 70px;
+    right: 0;
+    background-color: rgba(#000000, 0.8%);
+    transition: 0.3s;
+    z-index: 99;
+  }
+
+  &__item {
+    margin: 20px auto 40px auto;
+    text-align: center;
+  }
+
+  &__link {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.3s;
+
+    &:hover {
+      border-bottom: 2px solid $accent-color;
+    }
+  }
+
+  &_hidden {
+    right: -200%;
+  }
+}

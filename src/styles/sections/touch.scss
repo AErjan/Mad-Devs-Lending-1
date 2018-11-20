@@ -1,8 +1,20 @@
 .touch {
-  padding: 65px 0 100px 0;
+  padding: 65px 0 63px 0;
+
+  @media (max-width: 1350px) {
+    .title {
+      text-align: center;
+    }
+  }
 
   &__map {
-    margin-bottom: 60px;
+    margin-bottom: 55px;
+    max-width: 1920px;
+    width: 100%;
+
+    @media (max-width: 1350px) {
+      display: none;
+    }
   }
 
   &__contact {
@@ -10,18 +22,39 @@
     display: inline-block;
     vertical-align: top;
     margin-right: 40px;
+
+    @media (max-width: 1350px) {
+      display: block;
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 960px) {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 20px 0 20px;
+    }
   }
 
   &__header {
     font-family: $ff-text-bold;
     font-size: 1.25rem;
     text-transform: uppercase;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+
+    @media (max-width: 1350px) {
+      text-align: center;
+    }
   }
 
   &__description {
     color: #8d8f92;
     line-height: 1.5rem;
+    margin-bottom: 30px;
+
+    @media (max-width: 1350px) {
+      text-align: center;
+    }
   }
 
   &__form {
@@ -32,10 +65,25 @@
     font-family: $ff-text-bold;
     background-color: #ffffff;
     margin-top: -193px;
+
+    @media (max-width: 1350px) {
+      width: 70%;
+      margin: 0 auto 0 150px;
+      text-align: center;
+    }
+
+    @media (max-width: 960px) {
+      margin: 0 auto 0 130px;
+    }
+
+    @media (max-width: 760px) {
+      width: 100%;
+      margin: 0;
+    }
   }
 
   &__fields {
-    margin-bottom: 28px;
+    margin-bottom: 25px;
   }
 
   &__field {
@@ -47,12 +95,21 @@
     &:nth-child(2n) {
       margin-right: 0;
     }
+
+    @media (max-width: 1350px) {
+      width: 359px;
+    }
+
+    @media (max-width: 1156px) {
+      width: 100%;
+      margin-bottom: 20px;
+    }
   }
 
   &__label {
     display: block;
     text-transform: uppercase;
-    margin: 0 0 10px 6px;
+    margin: 0 0 5px 6px;
   }
 
   &__input {
@@ -60,10 +117,10 @@
     border: 2px solid transparent;
     border-radius: 5px;
     background-color: #eaeef1;
-    padding: 14px;
+    padding: 12px 14px 12px 14px;
     outline: none;
 
-    &:active {
+    &:focus {
       border-color: $accent-color;
     }
   }
@@ -75,9 +132,11 @@
     border-radius: 5px;
     background-color: #eaeef1;
     padding: 14px;
-    margin-bottom: 30px;
+    margin-bottom: 23px;
+    outline: none;
 
-    &:active {
+    &:active,
+    &:focus {
       border-color: $accent-color;
     }
   }
