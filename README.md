@@ -4,7 +4,7 @@
 
 - Склонируйте данный репозитории
 
-  > git clone https://github.com/AErjan/Mad-Devs-Lending-1.git
+  > git clone https://github.com/AErjan/Modest-Lending.git
 
 - Запустите команду npm install
 
